@@ -16,6 +16,7 @@ ALLOWED_HOSTS = [
     '*.amazonaws.com',
     '127.0.0.1',
     'localhost',
+    "*"
 ]
 
 # Production database (PostgreSQL/MySQL recommended)

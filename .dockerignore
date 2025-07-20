@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+.env/
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Static/media (if using S3)
+static/
+media/
+
+# Migrations (optional if generated at runtime)
+**/migrations/*.pyc
+**/migrations/__pycache__/
