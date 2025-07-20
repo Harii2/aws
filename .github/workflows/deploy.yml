@@ -25,10 +25,10 @@ jobs:
 
       - name: Deploy to Elastic Beanstalk
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}  ✅
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} ✅
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-south-1"
         run: |
-          eb init aws-apis --region $AWS_REGION --platform docker ✅
-          eb use aws-apis-prod ✅
-          eb deploy ✅
+          eb init aws-apis --region $AWS_REGION --platform docker 
+          eb use aws-apis-prod 
+          eb deploy 
