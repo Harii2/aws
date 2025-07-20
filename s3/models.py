@@ -8,7 +8,8 @@ from django.db import models
 def upload_to_s3_unique(instance, filename):
     name, ext = filename.split('.')
     unique_id = uuid.uuid4().hex
-    return f"uploads/{name}_{unique_id}.{ext}"
+    from django.conf import settings
+    return f"{settings.ENVIRONMENT.lower()}/uploads/{name}_{unique_id}.{ext}"
 
 from django.core.exceptions import ValidationError
 
