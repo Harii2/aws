@@ -35,3 +35,7 @@ class UploadedFile(models.Model):
             self.file_size = self.file.size
             self.content_type = mimetypes.guess_type(self.file.name)[0] or 'application/octet-stream'
         super().save(*args, **kwargs)
+
+class Document(models.Model):
+    title = models.CharField(max_length=100)
+    file = models.TextField()
