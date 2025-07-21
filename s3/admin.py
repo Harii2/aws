@@ -4,6 +4,7 @@ from django.contrib.admin import ModelAdmin
 from s3.models import UploadedFile, Document
 
 
+
 # Register your models here.
 
 @admin.register(UploadedFile)
