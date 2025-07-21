@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 
-from s3.models import UploadedFile, Document
+from s3.models import UploadedFile
 
 
 # Register your models here.
@@ -26,6 +26,3 @@ class UploadedFileAdmin(ModelAdmin):
 
     # file.short_description = "File (Presigned)"
 
-@admin.register(Document)
-class DocumentAdmin(ModelAdmin):
-    pass
